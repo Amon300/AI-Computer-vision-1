@@ -13,8 +13,6 @@ for i,r in enumerate(result):
     classes =r.boxes.cls.tolist()
 
     for labels,detection in zip(classes, detection):
-
-
         label = names[labels]
         x,y,w,h,conf,_ = detection
 
@@ -27,23 +25,4 @@ for i,r in enumerate(result):
 
     cv2.imshow("image", image)
     cv2.waitKey(0)
-
-    # cv2.imshow()
-
-    # name
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cv2.imshow("image", image)
-#cv2.waitKey(0)
 
